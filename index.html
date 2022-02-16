@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
     <script src="js/app.js" defer></script>
     <title>Pricing component with toggle</title>
 </head>
 <body>
-    
+    <main class="container">
+
+        <header class="header">
+            <h1 class="header__title">Our Pricing</h1>
+            <div class="header__subtitle">
+                <h4 class="header__option">Annually</h4>
+                <a href="#" class="header__change" id="header__change"></a>
+                <h4 class="header__option">Monthly</h4>
+            </div>
+        </header>
+
+        <section class="section">
+            <article class="card card--left">
+                <ul class="card__list">
+                    <li class="card__item"><b>Basic</b></li>
+                    <li class="card__item card__item--price"><p class="card__item--simbol">$</p>19.99</li><hr class="card__hr">
+                    <li class="card__item">500 GB Storage</li><hr class="card__hr">
+                    <li class="card__item">2 Users Allowed</li><hr class="card__hr">
+                    <li class="card__item">Send up to 3 GB</li><hr class="card__hr">
+                </ul>
+                <input type="button" value="LEARN MORE" class="card__button">
+            </article>
+            <article class="card card--center">
+                <ul class="card__list">
+                    <li class="card__item"><b>Professional</b></li>
+                    <li class="card__item card__item--price"><p class="card__item--simbol">$</p>24.99</li><hr class="card__hr card__hr--center">
+                    <li class="card__item">1 TB Storage</li><hr class="card__hr card__hr--center">
+                    <li class="card__item">5 Users Allowed</li><hr class="card__hr card__hr--center">
+                    <li class="card__item">Send up to 10 GB</li><hr class="card__hr card__hr--center">
+                </ul>
+                <input type="button" value="LEARN MORE" class="card__button card__button--center">
+            </article>
+            <article class="card card--right">
+                <ul class="card__list">
+                    <li class="card__item"><b>Master</b></li>
+                    <li class="card__item card__item--price"><p class="card__item--simbol">$</p>39.99</li><hr class="card__hr">
+                    <li class="card__item">2 TB Storage</li><hr class="card__hr">
+                    <li class="card__item">10 Users Allowed</li><hr class="card__hr">
+                    <li class="card__item">Send up to 20 GB</li><hr class="card__hr">
+                </ul>
+                <input type="button" value="LEARN MORE" class="card__button">
+            </article>
+        </section>
+
+    </main>
 </body>
 </html>
